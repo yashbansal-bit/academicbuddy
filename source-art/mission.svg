@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" fill="none">
+  <defs>
+    <linearGradient id="leftPage" x1="279" y1="153" x2="445" y2="307" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#EFF7F1"/>
+    </linearGradient>
+    <linearGradient id="rightPage" x1="452" y1="149" x2="622" y2="304" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#EFF4FC"/>
+    </linearGradient>
+  </defs>
+  <circle cx="131" cy="112" r="82" fill="#C9E6D2" fill-opacity=".4"/>
+  <circle cx="758" cy="316" r="125" fill="#CBD9F0" fill-opacity=".46"/>
+  <path d="M0 347c114-39 195-30 297 12 111 46 188 52 310 2 98-40 188-41 293-4v63H0v-73Z" fill="#fff" fill-opacity=".32"/>
+  <path d="M265 162c59-21 124-16 185 19v144c-59-34-126-40-185-18V162Z" fill="#6C9C7D" fill-opacity=".2"/>
+  <path d="M450 181c63-36 125-40 185-19v145c-60-22-126-16-185 18V181Z" fill="#6986B0" fill-opacity=".2"/>
+  <path d="M274 150c54-21 116-14 176 19v145c-60-33-122-40-176-19V150Z" fill="url(#leftPage)" stroke="#D3E5D8" stroke-width="3"/>
+  <path d="M450 169c59-33 122-40 176-19v145c-54-21-116-14-176 19V169Z" fill="url(#rightPage)" stroke="#D8E2F0" stroke-width="3"/>
+  <path d="M450 169v145" stroke="#A8C6B1" stroke-width="4"/>
+  <path d="M300 187c38-10 78-7 119 9m-119 12c38-10 78-7 119 9m-119 12c38-10 78-7 119 9m-119 12c38-10 78-7 119 9" stroke="#A7C6B0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M481 196c42-16 81-19 118-10m-118 31c42-16 81-19 118-10m-118 31c42-16 81-19 118-10m-118 31c42-16 81-19 118-10" stroke="#AAB9D1" stroke-width="5" stroke-linecap="round"/>
+  <rect x="628" y="95" width="116" height="72" rx="22" fill="#fff" fill-opacity=".86" stroke="#D7E8DE" stroke-width="3"/>
+  <path d="m650 167-7 20 24-17" fill="#fff" stroke="#D7E8DE" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="663" cy="131" r="5" fill="#77A887"/>
+  <circle cx="686" cy="131" r="5" fill="#7793C0"/>
+  <circle cx="709" cy="131" r="5" fill="#E0B96E"/>
+  <path d="m194 205 8 18 19 2-14 12 4 18-17-10-17 10 4-18-14-12 19-2 8-18Z" fill="#E3BC70" fill-opacity=".82"/>
+  <path d="m717 220 6 13 14 2-10 9 3 14-13-7-13 7 3-14-10-9 14-2 6-13Z" fill="#83A0D0" fill-opacity=".8"/>
+  <circle cx="219" cy="118" r="8" fill="#83B392" fill-opacity=".7"/>
+  <circle cx="693" cy="72" r="6" fill="#C9A96E" fill-opacity=".8"/>
+</svg>

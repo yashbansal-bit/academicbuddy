@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6faf7">
+    <meta name="description" content="AcademicBuddy is a friendly space to stay on top of school and research.">
+    <title>AcademicBuddy — Your study space</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <main id="landing-page" class="landing-page" hidden>
+      <div class="floating-cap-field" aria-hidden="true">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+      </div>
+      <header class="site-header landing-header">
+        <a class="brand" href="/" aria-label="AcademicBuddy home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M7.5 9.5c5.2-.8 9.3.2 12.5 3.2v18c-3.2-3-7.3-4-12.5-3.2v-18Z" fill="currentColor" opacity=".92"/>
+              <path d="M32.5 9.5c-5.2-.8-9.3.2-12.5 3.2v18c3.2-3 7.3-4 12.5-3.2v-18Z" fill="currentColor"/>
+              <path d="M20 13v18" stroke="#E8F7EF" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>academic<span class="brand-light">buddy</span></span>
+        </a>
+        <nav class="landing-actions" aria-label="Account">
+          <a class="header-login" href="/login">Log in</a>
+          <a class="button button-small" href="/signup">Sign up</a>
+        </nav>
+      </header>
+      <section class="landing-hero">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot"></span> A calmer way to keep up</span>
+          <h1>A little help goes<br>a <em>long way.</em></h1>
+          <p>Search for better sources, make complex ideas easier to understand, and keep your school tasks together in one calm study space.</p>
+          <div class="hero-actions">
+            <a class="button" href="/signup">Create your account <span aria-hidden="true">→</span></a>
+            <a class="button button-outline" href="/login">I already have an account</a>
+          </div>
+          <p class="hero-note"><span class="note-sparkle">✳</span> A thoughtful space, made for curious students.</p>
+        </div>
+        <div class="hero-art" aria-label="A preview of the AcademicBuddy student workspace">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="landing-preview">
+            <div class="preview-greeting"><span class="preview-sun">☼</span><span><small>YOUR STUDY SPACE</small><strong>A fresh start, every day.</strong></span></div>
+            <div class="preview-tiles">
+              <div class="preview-tile tile-green"><span>▤</span><small>My sources</small></div>
+              <div class="preview-tile tile-blue"><span>▦</span><small>My calendar</small></div>
+              <div class="preview-tile tile-lilac"><span>✧</span><small>Chat Buddy</small></div>
+            </div>
+            <div class="preview-task">
+              <span class="task-check"></span><span><small>UP NEXT</small><strong>Your next great idea</strong></span><span class="task-arrow">→</span>
+            </div>
+            <div class="preview-chat"><span class="chat-sparkle">✳</span><span><strong>A buddy for the busy days.</strong><small>One thing at a time. You’ve got this.</small></span></div>
+          </div>
+          <span class="floating-leaf leaf-one">✳</span><span class="floating-leaf leaf-two">✦</span>
+        </div>
+      </section>
+      <footer class="landing-footer"><span>AcademicBuddy</span><span>Made for curious minds</span></footer>
+    </main>
+
+    <main id="auth-page" class="auth-page" hidden>
+      <div class="floating-cap-field" aria-hidden="true">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+      </div>
+      <header class="site-header auth-header">
+        <a class="brand" href="/" aria-label="AcademicBuddy home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M7.5 9.5c5.2-.8 9.3.2 12.5 3.2v18c-3.2-3-7.3-4-12.5-3.2v-18Z" fill="currentColor" opacity=".92"/>
+              <path d="M32.5 9.5c-5.2-.8-9.3.2-12.5 3.2v18c3.2-3 7.3-4 12.5-3.2v-18Z" fill="currentColor"/>
+              <path d="M20 13v18" stroke="#E8F7EF" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>academic<span class="brand-light">buddy</span></span>
+        </a>
+        <a class="header-login" href="/">← Back to home</a>
+      </header>
+      <section class="auth-wrap">
+        <aside class="auth-aside">
+          <span class="aside-sparkle" aria-hidden="true">✳</span>
+          <p class="eyebrow">YOUR SPACE TO GROW</p>
+          <h1 id="auth-aside-title">Good things<br>start <em>here.</em></h1>
+          <p id="auth-aside-copy">A little more focus, a lot more you. Your study space is ready when you are.</p>
+          <div class="aside-note"><span>✧</span> Take it one step at a time.</div>
+        </aside>
+        <section class="auth-card" aria-labelledby="auth-title">
+          <div class="auth-heading">
+            <span class="mini-mark" aria-hidden="true">✳</span>
+            <p class="eyebrow">A LITTLE MORE FOCUS, A LOT MORE YOU</p>
+            <h2 id="auth-title">Welcome back</h2>
+            <p id="auth-subtitle" class="form-subtitle">Log in to pick up where you left off.</p>
+          </div>
+          <div id="auth-status" class="status-message" role="status" aria-live="polite" hidden></div>
+
+          <form id="login-form" class="auth-form" method="post" action="/api/auth/login" hidden>
+            <label for="login-email">Email address</label>
+            <div class="input-wrap"><span class="input-icon" aria-hidden="true">✉</span><input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@school.edu" maxlength="254" required></div>
+            <div class="label-row"><label for="login-password">Password</label><button class="text-button" id="forgot-link" type="button">Forgot password?</button></div>
+            <div class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">⌑</span><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required><button class="show-password" type="button" data-toggle="login-password" aria-label="Show password">Show</button></div>
+            <label class="remember-row"><input type="checkbox" name="remember"><span class="custom-check"></span><span>Remember me</span></label>
+            <button class="primary-button" type="submit"><span>Log in to your space</span><span aria-hidden="true">→</span></button>
+            <p class="form-switch">New to AcademicBuddy? <a href="/signup">Create an account</a></p>
+            <p class="extra-action">Need a new verification link? <button class="text-button" id="resend-link" type="button">Resend email</button></p>
+          </form>
+
+          <form id="signup-form" class="auth-form" method="post" action="/api/auth/signup" hidden>
+            <label for="signup-name">Full name</label>
+            <div class="input-wrap"><span class="input-icon" aria-hidden="true">♙</span><input id="signup-name" name="fullName" type="text" autocomplete="name" placeholder="Your name" minlength="2" maxlength="100" required></div>
+            <label for="signup-email">Email address</label>
+            <div class="input-wrap"><span class="input-icon" aria-hidden="true">✉</span><input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@school.edu" maxlength="254" required></div>
+            <fieldset class="avatar-picker">
+              <legend>Pick your profile picture</legend>
+              <p>Choose the student illustration that feels like you.</p>
+              <div class="avatar-options">
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-1" checked><img src="/avatars/avatar-1.svg" alt=""><span class="visually-hidden">Student avatar 1</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-2"><img src="/avatars/avatar-2.svg" alt=""><span class="visually-hidden">Student avatar 2</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-3"><img src="/avatars/avatar-3.svg" alt=""><span class="visually-hidden">Student avatar 3</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-4"><img src="/avatars/avatar-4.svg" alt=""><span class="visually-hidden">Student avatar 4</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-5"><img src="/avatars/avatar-5.svg" alt=""><span class="visually-hidden">Student avatar 5</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-6"><img src="/avatars/avatar-6.svg" alt=""><span class="visually-hidden">Student avatar 6</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-7"><img src="/avatars/avatar-7.svg" alt=""><span class="visually-hidden">Student avatar 7</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-8"><img src="/avatars/avatar-8.svg" alt=""><span class="visually-hidden">Student avatar 8</span></label>
+                <label class="avatar-option"><input type="radio" name="avatarId" value="avatar-9"><img src="/avatars/avatar-9.svg" alt=""><span class="visually-hidden">Student avatar 9</span></label>
+              </div>
+            </fieldset>
+            <label for="signup-password">Create password</label>
+            <div class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">⌑</span><input id="signup-password" name="password" type="password" autocomplete="new-password" placeholder="At least 10 characters" minlength="10" required><button class="show-password" type="button" data-toggle="signup-password" aria-label="Show password">Show</button></div>
+            <label for="signup-confirm">Confirm password</label>
+            <div class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">⌑</span><input id="signup-confirm" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Type it one more time" minlength="10" required><button class="show-password" type="button" data-toggle="signup-confirm" aria-label="Show password">Show</button></div>
+            <p class="field-hint">Use 10 or more characters. Email verification is required before login.</p>
+            <button class="primary-button" type="submit"><span>Create your account</span><span aria-hidden="true">→</span></button>
+            <p class="form-switch">Already have an account? <a href="/login">Log in</a></p>
+          </form>
+
+          <form id="forgot-form" class="auth-form" method="post" action="/api/auth/forgot-password" hidden>
+            <label for="forgot-email">Email address</label>
+            <div class="input-wrap"><span class="input-icon" aria-hidden="true">✉</span><input id="forgot-email" name="email" type="email" autocomplete="email" placeholder="you@school.edu" maxlength="254" required></div>
+            <button class="primary-button" type="submit"><span>Send reset link</span><span aria-hidden="true">→</span></button>
+            <p class="form-switch"><a href="/login">← Back to log in</a></p>
+          </form>
+
+          <form id="reset-form" class="auth-form" method="post" action="/api/auth/reset-password" hidden>
+            <label for="reset-password">New password</label>
+            <div class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">⌑</span><input id="reset-password" name="password" type="password" autocomplete="new-password" placeholder="At least 10 characters" minlength="10" required><button class="show-password" type="button" data-toggle="reset-password" aria-label="Show password">Show</button></div>
+            <label for="reset-confirm">Confirm new password</label>
+            <div class="input-wrap"><span class="input-icon lock-icon" aria-hidden="true">⌑</span><input id="reset-confirm" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Type it one more time" minlength="10" required><button class="show-password" type="button" data-toggle="reset-confirm" aria-label="Show password">Show</button></div>
+            <button class="primary-button" type="submit"><span>Update password</span><span aria-hidden="true">→</span></button>
+          </form>
+
+          <div id="oauth-area" class="oauth-area" hidden>
+            <div class="divider"><span id="oauth-copy">or continue with</span></div>
+            <div class="oauth-buttons">
+              <a class="oauth-button" data-oauth-provider="google" href="/auth/oauth/google" hidden><span class="google-g" aria-hidden="true">G</span>Google</a>
+              <a class="oauth-button" data-oauth-provider="x" href="/auth/oauth/x" hidden><span class="x-icon" aria-hidden="true">𝕏</span>X / Twitter</a>
+            </div>
+            <p id="oauth-note" class="oauth-note" hidden></p>
+          </div>
+          <form id="oauth-email-form" class="auth-form" hidden>
+            <label for="oauth-email">Email address</label>
+            <div class="input-wrap"><span class="input-icon" aria-hidden="true">✉</span><input id="oauth-email" name="email" type="email" autocomplete="email" placeholder="you@school.edu" maxlength="254" required></div>
+            <p class="field-hint">We’ll email you a secure confirmation link. Your X account will not be connected until you confirm it.</p>
+            <button class="primary-button" type="submit"><span>Send confirmation email</span><span aria-hidden="true">→</span></button>
+            <p class="form-switch"><a href="/login">← Back to log in</a></p>
+          </form>
+          <p id="email-setup-note" class="setup-note" hidden>Email verification and password reset require configured email delivery.</p>
+        </section>
+      </section>
+      <footer class="auth-footer"><span>Made for curious minds</span><span>© <span id="year"></span> AcademicBuddy</span></footer>
+    </main>
+
+    <main id="app-page" class="app-page" hidden>
+      <div class="floating-cap-field" aria-hidden="true">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+        <img class="bouncing-cap" src="/source-art/graduation-cap.svg" alt="">
+      </div>
+      <header class="app-header">
+        <a class="brand app-brand" href="/dashboard" aria-label="AcademicBuddy home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M7.5 9.5c5.2-.8 9.3.2 12.5 3.2v18c-3.2-3-7.3-4-12.5-3.2v-18Z" fill="currentColor" opacity=".92"/>
+              <path d="M32.5 9.5c-5.2-.8-9.3.2-12.5 3.2v18c3.2-3 7.3-4 12.5-3.2v-18Z" fill="currentColor"/>
+              <path d="M20 13v18" stroke="#E8F7EF" stroke-width="1.8"/>
+            </svg>
+          </span>
+          <span>academic<span class="brand-light">buddy</span></span>
+        </a>
+        <nav class="top-nav" aria-label="Main navigation">
+          <a class="top-nav-link" data-route="/dashboard" href="/dashboard">Home</a>
+          <a class="top-nav-link" data-route="/grades" href="/grades">Grades</a>
+          <a class="top-nav-link" data-route="/chat-buddy" href="/chat-buddy">Chat</a>
+          <a class="top-nav-link" data-route="/how-to-use" href="/how-to-use">How To Use</a>
+          <a class="top-nav-link" data-route="/calendar" href="/calendar">Calendar</a>
+          <a class="top-nav-link" data-route="/search" href="/search">Search</a>
+          <a class="top-nav-link" data-route="/sources" href="/sources">Sources</a>
+          <a class="top-nav-link" data-route="/about" href="/about">About</a>
+        </nav>
+        <div class="profile-actions">
+          <img id="user-avatar" class="user-avatar profile-avatar" src="/avatars/avatar-1.svg" alt="">
+          <span id="user-name" class="user-name">Student</span>
+          <button id="logout-button" class="logout-button" type="button">Log out</button>
+        </div>
+      </header>
+      <nav class="mobile-nav" aria-label="Mobile navigation">
+        <a href="/dashboard"><span aria-hidden="true">⌂</span><small>Home</small></a>
+        <a href="/grades"><span aria-hidden="true">▤</span><small>Grades</small></a>
+        <a href="/chat-buddy"><span aria-hidden="true">✳</span><small>Chat</small></a>
+        <a href="/how-to-use" aria-label="How To Use"><span class="mobile-info-icon" aria-hidden="true">i</span><small>Guide</small></a>
+        <a href="/calendar"><span aria-hidden="true">▦</span><small>Calendar</small></a>
+        <a href="/search"><span aria-hidden="true">⌕</span><small>Search</small></a>
+        <a href="/sources"><span aria-hidden="true">▣</span><small>Sources</small></a>
+        <a href="/about"><span aria-hidden="true">✦</span><small>About</small></a>
+      </nav>
+
+      <section id="home-content" class="home-content" hidden>
+        <div class="home-column">
+          <section class="greeting-panel">
+            <div class="greeting-copy">
+              <h1>Hi there!</h1>
+              <p class="greeting-start"><span id="greeting-name">Student</span>! <a href="/chat-buddy">Start chatting</a></p>
+              <p class="greeting-description">This is your personal study space. Review upcoming tasks, explore sources, and ask for help when a concept feels confusing. Use Calendar for deadlines and Grades to keep track of your progress.</p>
+            </div>
+            <img id="greeting-avatar" class="greeting-avatar" src="/avatars/avatar-1.svg" alt="Student profile illustration">
+          </section>
+
+          <section class="tasks-section" aria-labelledby="tasks-title">
+            <div class="section-title-row">
+              <div><h2 id="tasks-title">Upcoming Tasks</h2></div>
+              <a class="subtle-link" href="/calendar">Manage tasks <span aria-hidden="true">→</span></a>
+            </div>
+            <div id="dashboard-task-list" class="task-list task-grid" aria-live="polite"></div>
+          </section>
+        </div>
+
+        <aside id="dashboard-chat-panel" class="chat-panel">
+          <button id="dashboard-chat-toggle" class="chat-panel-toggle" type="button" aria-expanded="true" aria-controls="dashboard-chat-panel" aria-label="Collapse Chat Buddy panel" title="Collapse Chat Buddy panel"><span aria-hidden="true">›</span></button>
+          <div class="chat-panel-heading"><strong>Chat Buddy</strong></div>
+          <div id="dashboard-chat-messages" class="chat-conversation" aria-live="polite">
+            <div class="chat-line chat-line-buddy"><div class="chat-message"><strong id="dashboard-chat-greeting">Hi there!</strong><p>How can I help you with your studies today?</p></div></div>
+          </div>
+          <form class="chat-compose" data-chat-form>
+            <label class="visually-hidden" for="dashboard-chat-input">Ask Chat Buddy a study question</label>
+            <input id="dashboard-chat-input" name="message" type="text" maxlength="2000" aria-label="Chat message" placeholder="Ask a study question">
+            <button type="submit" aria-label="Send message">➤</button>
+          </form>
+          <p id="dashboard-chat-note" class="chat-gentle-note" hidden>Configure local Ollama or an OpenAI-compatible provider in <code>.env</code> to enable Chat Buddy. Never share an API key in chat.</p>
+          <a class="chat-gentle-note" href="/chat-buddy">Open the full Chat Buddy</a>
+        </aside>
+      </section>
+
+      <section id="search-content" class="feature-content" hidden aria-labelledby="search-title">
+        <div class="feature-heading">
+          <p class="eyebrow">FIND A GOOD PLACE TO START</p>
+          <h1 id="search-title">Search / Sources</h1>
+          <p>Explore scholarly works indexed by Crossref. Search by topic, author, or a phrase from your question, then follow promising leads to the original work.</p>
+        </div>
+        <div class="search-layout">
+          <div class="search-main">
+            <p class="feature-supporting-copy">A focused search usually works best: name the subject, place, time period, or group you are studying. Compare several records instead of treating the first result as the final answer.</p>
+            <label class="source-search-label" for="source-query">Search for a topic</label>
+            <form id="source-search-form" class="feature-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer">
+              <div class="source-search-field"><svg class="source-search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="source-query" name="q" type="search" maxlength="200" placeholder="Search any topic..." required></div>
+              <div class="source-search-actions"><button class="primary-button" type="submit" data-crossref-search>Search AcademicBuddy</button></div>
+            </form>
+            <div class="source-external-search" data-external-search="source-search-form">
+              <button class="source-google-link" type="submit" form="source-search-form">Search Google ↗</button>
+              <a class="source-google-link" data-google-search="images" href="https://www.google.com/imghp" target="_blank" rel="noopener noreferrer">Google Images ↗</a>
+            </div>
+            <p id="source-search-status" class="feature-notice" role="status" aria-live="polite">Search scholarly metadata by topic, author, or title.</p>
+            <div id="source-results" class="source-results" aria-live="polite"></div>
+            <p class="feature-caveat">Google searches open in a new tab and send your search terms to Google. Academic source results shown here come from Crossref, with illustrative topic-related images from Wikimedia Commons. If no academic results are found, your search terms are sent to Wikipedia for a spelling suggestion. Compatibility estimates describe topic fit, not accuracy or reliability. Reading levels are rough estimates from abstracts.</p>
+            <section id="source-examples" class="source-examples" aria-labelledby="source-examples-title">
+              <div class="source-examples-heading">
+                <div>
+                  <p class="eyebrow">REAL CROSSREF RECORDS</p>
+                  <h2 id="source-examples-title">Example sources</h2>
+                </div>
+              </div>
+              <p id="source-examples-status" class="source-examples-status" role="status">Loading a few real source examples…</p>
+              <div id="source-example-list" class="source-example-grid"></div>
+              <p class="source-examples-note">Example images are general Wikimedia Commons illustrations and may not relate to the works. They are not source covers or endorsements.</p>
+            </section>
+          </div>
+          <aside class="recent-sources-panel" aria-labelledby="recent-sources-title">
+            <div class="recent-sources-heading">
+              <div>
+                <p class="eyebrow">A FRESH LOOK</p>
+                <h2 id="recent-sources-title">What’s new</h2>
+              </div>
+              <button id="recent-sources-pause" class="recent-pause-button" type="button" aria-pressed="false">Pause</button>
+            </div>
+            <p id="recent-sources-status" class="recent-sources-status" role="status">Loading recent publications…</p>
+            <div id="recent-source-display" class="recent-source-feed" hidden></div>
+            <div class="recent-source-controls">
+              <button id="recent-sources-previous" type="button" aria-label="Previous recent source">‹</button>
+              <span id="recent-source-position">0 of 0</span>
+              <button id="recent-sources-next" type="button" aria-label="Next recent source">›</button>
+            </div>
+            <p class="recent-sources-note">General Wikimedia Commons illustrations may not relate to these records. They are not source covers; use each image’s source link for details.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="source-information-content" class="feature-content" hidden aria-labelledby="source-information-title">
+        <div class="feature-heading">
+          <p class="eyebrow">UNDERSTAND WHAT YOU FIND</p>
+          <h1 id="source-information-title">Source Information</h1>
+          <p id="source-detail-status" role="status" aria-live="polite">Choose a source from Search / Sources to explore its details.</p>
+        </div>
+        <p class="feature-supporting-copy">Use this page to slow down and examine one record at a time. Look at its abstract, publication details, and original source; a database listing is a starting point, not a guarantee of quality.</p>
+        <label class="source-search-label" for="source-information-query">Search for a topic</label>
+        <form id="source-information-search-form" class="feature-search source-information-search" action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer">
+          <div class="source-search-field"><svg class="source-search-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="2"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input id="source-information-query" name="q" type="search" maxlength="200" placeholder="Search any topic..." required></div>
+          <div class="source-search-actions">
+            <button class="primary-button" type="submit" data-crossref-search>Search AcademicBuddy</button>
+          </div>
+        </form>
+        <div class="source-external-search" data-external-search="source-information-search-form">
+          <button class="source-google-link" type="submit" form="source-information-search-form">Search Google ↗</button>
+          <a class="source-google-link" data-google-search="images" href="https://www.google.com/imghp" target="_blank" rel="noopener noreferrer">Google Images ↗</a>
+        </div>
+        <p id="source-information-search-status" class="feature-notice" role="status" aria-live="polite">Find formatted scholarly records here, or open Google Scholar to compare research results.</p>
+        <div id="source-information-results" class="source-results" aria-live="polite"></div>
+        <p class="feature-caveat source-information-search-note">Google searches open in a new tab and send your search terms to Google. AcademicBuddy formats Crossref records into source cards and estimates topic compatibility. If no academic results are found, the search is sent to Wikipedia for a spelling suggestion. Compatibility is not a quality or reliability score.</p>
+        <article id="source-detail" class="source-detail" hidden>
+          <div class="source-detail-banner">
+            <div class="source-detail-intro">
+              <a class="source-back-link" href="/search-sources">← Back to sources</a>
+              <p id="source-detail-kind" class="source-kind"></p>
+              <h2 id="source-detail-title"></h2>
+              <p id="source-detail-work-title" class="source-detail-work-title" hidden></p>
+              <p id="source-detail-meta" class="source-detail-meta"></p>
+            </div>
+            <div id="source-detail-photo-slot" class="source-detail-photo-slot"></div>
+          </div>
+          <div id="source-detail-compatibility" class="source-compatibility-panel" hidden>
+            <span id="source-detail-compatibility-level" class="source-compatibility-tag"></span>
+            <p id="source-detail-compatibility-explanation"></p>
+          </div>
+          <section class="source-facts" aria-labelledby="source-facts-title">
+            <h2 id="source-facts-title">Source information</h2>
+            <dl id="source-detail-facts" class="source-facts-list"></dl>
+          </section>
+          <div class="source-detail-grid">
+            <article class="guidance-card"><span class="guidance-icon" aria-hidden="true">Aa</span><div><h2>About this source</h2><p class="source-abstract-label">Publisher-provided abstract; not simplified.</p><p id="source-detail-abstract"></p><p class="guidance-reminder">Circle unfamiliar terms and check how the original work defines them.</p></div></article>
+            <article class="guidance-card"><span class="guidance-icon" aria-hidden="true">◎</span><div><h2>Why it matters</h2><p>Think about how this work connects to your research question. Compare its main claims with evidence from other sources.</p><p class="guidance-reminder">Ask what this source adds, which point of view it represents, and what questions remain unanswered.</p></div></article>
+            <article class="guidance-card"><span class="guidance-icon" aria-hidden="true">Aa</span><div><h2>Reading-level estimate</h2><p id="source-detail-reading-level"></p><p class="guidance-reminder">This is a rough estimate based on the abstract, not a judgment of the reader or the full work.</p></div></article>
+            <article class="guidance-card source-reliability-card"><span class="guidance-icon" aria-hidden="true">✓</span><div><h2>Source credibility &amp; evidence</h2><p id="source-detail-reliability">A database record cannot prove a source is reliable by itself. Check the author, publisher, evidence, and publication type before citing it.</p><p class="guidance-reminder">Open the original source and check its methods, author expertise and references. Compare its claims with other evidence; do not automatically trust a search result.</p></div></article>
+          </div>
+          <div class="source-detail-actions">
+            <a id="source-detail-link" class="feature-link" href="#" target="_blank" rel="noopener noreferrer">Open original source <span aria-hidden="true">↗</span></a>
+            <a id="source-detail-photo-source-link" class="feature-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Wikimedia photo source & license <span aria-hidden="true">↗</span></a>
+            <a id="source-image-search-link" class="feature-link" href="#" target="_blank" rel="noopener noreferrer">Search related images <span aria-hidden="true">↗</span></a>
+            <a id="source-video-search-link" class="feature-link" href="#" target="_blank" rel="noopener noreferrer">Search related videos <span aria-hidden="true">↗</span></a>
+            <a id="source-chat-link" class="feature-link" href="/chat-buddy">Ask Chat Buddy to explain <span aria-hidden="true">→</span></a>
+            <a class="feature-link" href="/search-sources">Back to Search / Sources <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+        <p class="feature-caveat">A publisher name, citation count, or search ranking alone cannot prove a source is trustworthy. Use your teacher’s criteria and evaluate the source itself.</p>
+        <a id="source-detail-search-link" class="feature-link" href="/search-sources">Find sources to evaluate <span aria-hidden="true">→</span></a>
+        <section id="source-information-examples" class="source-information-examples" aria-labelledby="source-information-examples-title" hidden>
+          <h2 id="source-information-examples-title">Start with a source</h2>
+          <p>These are real, recent Crossref records to explore. Open a record for its details, or search for a topic that fits your assignment.</p>
+          <p id="source-information-examples-status" class="source-examples-status" role="status" aria-live="polite">Loading recent source records…</p>
+          <div id="source-information-example-list" class="source-example-grid source-information-example-grid"></div>
+          <p class="source-examples-note">Example images are general Wikimedia Commons illustrations and may not relate to the works. They are not source covers or endorsements.</p>
+          <a class="feature-link" href="/search-sources">Search for your topic <span aria-hidden="true">→</span></a>
+        </section>
+        <aside class="scholar-note" aria-labelledby="scholar-note-title">
+          <div>
+            <p class="scholar-note-label">KEEP EXPLORING</p>
+            <h2 id="scholar-note-title">Explore more with Google Scholar</h2>
+            <p>Compare your search with scholarly results on Google Scholar. It opens separately and receives your search terms; its results are not imported here.</p>
+          </div>
+          <a id="source-information-google-link" class="source-google-link" href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Open Google Scholar <span aria-hidden="true">↗</span></a>
+        </aside>
+      </section>
+
+      <section id="about-content" class="feature-content" hidden aria-labelledby="about-title">
+        <div class="feature-heading">
+          <p class="eyebrow">MADE FOR CURIOUS MINDS</p>
+          <h1 id="about-title">Our Mission</h1>
+          <p>AcademicBuddy helps students research carefully, understand complex information, and keep schoolwork organised in one calm space.</p>
+          <p>Schoolwork can ask you to do several things at once: choose a question, find evidence, make sense of what you read, and remember what is due next. AcademicBuddy brings those steps into one student-friendly workspace so it feels easier to decide what to do next.</p>
+          <p class="feature-supporting-copy">We believe good research starts with curiosity and grows through careful questions. Our tools are designed to help students explore evidence, build confidence, and make their own informed decisions—not replace their thinking.</p>
+        </div>
+        <div class="mission-banner" aria-hidden="true">
+          <img class="mission-illustration" src="/source-art/mission.svg" alt="">
+        </div>
+        <div class="mission-grid">
+          <article class="mission-card"><span class="mission-icon mission-icon-green">▤</span><div><h2>Reliable Sources</h2><p>Discover research records, inspect the original work, and compare evidence. A search result is only a starting point, so we encourage you to check who created it, what it supports, and whether it fits your question.</p></div></article>
+          <article class="mission-card"><span class="mission-icon mission-icon-purple">▣</span><div><h2>Clear Explanations</h2><p>Break unfamiliar ideas into manageable steps, ask follow-up questions, and practise with examples while keeping the important details and your own voice.</p></div></article>
+          <article class="mission-card"><span class="mission-icon mission-icon-blue">♙</span><div><h2>Designed for Students</h2><p>Bring research, study support, deadlines, and personal progress into one welcoming workspace. Your calendar and grades help you stay organised without pretending to replace your school tools.</p></div></article>
+        </div>
+        <section class="about-learning" aria-labelledby="about-learning-title">
+          <div class="about-learning-heading">
+            <p class="eyebrow">A GENTLER WAY TO GET STARTED</p>
+            <h2 id="about-learning-title">Big assignments, broken into smaller steps</h2>
+            <p>Good learning is rarely one perfect answer. It is a series of small choices: ask a better question, look at the evidence, make a connection, and choose one useful next step.</p>
+          </div>
+          <div class="about-story-grid">
+            <article class="about-story-card">
+              <img src="/source-art/about-research.svg" alt="" aria-hidden="true">
+              <h3>Start with curiosity</h3>
+              <p>Search helps you turn a broad topic into a question you can investigate. Explore author and publication details, follow promising leads, and use your teacher’s criteria when deciding what belongs in your work.</p>
+            </article>
+            <article class="about-story-card">
+              <img src="/source-art/about-thinking.svg" alt="" aria-hidden="true">
+              <h3>Make ideas clearer</h3>
+              <p>Chat Buddy can explain a concept, offer a hint, or help you plan a study session. Use its response to guide your own thinking, check important claims against the linked reading suggestions, and keep your own voice in every assignment.</p>
+            </article>
+            <article class="about-story-card">
+              <img src="/source-art/about-planning.svg" alt="" aria-hidden="true">
+              <h3>Keep your next step visible</h3>
+              <p>Calendar tasks and grade records give you a simple place to notice deadlines and progress. They are private to your account, entered by you, and are not automatically linked to a school platform.</p>
+            </article>
+          </div>
+        </section>
+        <section class="about-note" aria-labelledby="about-note-title">
+          <div class="about-note-mark" aria-hidden="true">✳</div>
+          <div>
+            <p class="eyebrow">HELP THAT RESPECTS YOUR WORK</p>
+            <h2 id="about-note-title">A study companion, not a shortcut</h2>
+            <p>AcademicBuddy is here to make the process of learning feel more manageable—not to do your thinking for you. Source records can be incomplete, suggested references may not answer your exact question, and AI can make mistakes. Open the original sources, check the evidence, follow your teacher’s rules, and ask a trusted adult when something important is unclear.</p>
+          </div>
+        </section>
+      </section>
+
+      <section id="chat-content" class="feature-content" hidden aria-labelledby="chat-title">
+        <div class="feature-heading">
+          <p class="eyebrow">A THOUGHTFUL STUDY PARTNER</p>
+          <h1 id="chat-title">Chat Buddy</h1>
+          <p>Ask a school question, unpack a tricky idea, or make a plan for what to learn next. Chat Buddy is designed to guide your thinking one step at a time.</p>
+        </div>
+        <p class="feature-supporting-copy">Tell Chat Buddy what you are trying to understand and where you got stuck. You can ask for a hint, a simpler explanation, a worked example, or a few questions to check your understanding.</p>
+        <div class="study-chat-card">
+          <header class="study-chat-heading">
+            <div>
+              <p class="eyebrow">YOUR STUDY BUDDY</p>
+              <h2>Let’s figure it out together</h2>
+              <p>Ask a question, get a hint, and take the next step at your own pace.</p>
+            </div>
+            <span class="study-chat-prompt">✳ One step at a time</span>
+          </header>
+          <div id="full-chat-messages" class="full-chat-messages" aria-live="polite">
+            <div class="chat-line chat-line-buddy"><div class="chat-message"><strong>Chat Buddy</strong><p>Hi! Tell me what you are learning. We can take it one step at a time.</p></div></div>
+          </div>
+          <div class="chat-prompts" aria-label="Try asking">
+            <button type="button" data-chat-prompt="Can you help me understand photosynthesis?">Explain a concept</button>
+            <button type="button" data-chat-prompt="Help me plan my research on renewable energy.">Plan my research</button>
+            <button type="button" data-chat-prompt="Quiz me on the causes of the First World War.">Quiz me</button>
+          </div>
+          <form class="feature-chat-form" data-chat-form>
+            <label class="visually-hidden" for="full-chat-input">Ask Chat Buddy a study question</label>
+            <input id="full-chat-input" name="message" type="text" maxlength="2000" placeholder="What are you working on?" required>
+            <button class="primary-button" type="submit">Send <span aria-hidden="true">→</span></button>
+          </form>
+          <p id="chat-setup-note" class="feature-caveat" hidden>Configure local Ollama or an OpenAI-compatible provider in <code>.env</code> to enable Chat Buddy. Never share an API key in chat.</p>
+        </div>
+      </section>
+
+      <section id="calendar-content" class="feature-content" hidden aria-labelledby="calendar-title">
+        <div class="feature-heading">
+          <p class="eyebrow">ONE STEP AT A TIME</p>
+          <h1 id="calendar-title">My Calendar</h1>
+          <p>Keep assignments and deadlines together. Add a task, choose a due date, and mark it complete when you finish; your list is saved to your account.</p>
+        </div>
+        <p class="feature-supporting-copy">Choose a day to start a task for that date, or select a colored task block to edit it. For a larger assignment, split the work into smaller actions and give each one its own day.</p>
+        <div class="calendar-layout">
+          <div class="calendar-main">
+            <div class="calendar-toolbar" aria-label="Calendar controls">
+              <div class="calendar-month-navigation">
+                <button id="calendar-previous" class="calendar-nav-button" type="button" aria-label="Previous month">‹</button>
+                <h2 id="calendar-month-label" aria-live="polite"></h2>
+                <button id="calendar-next" class="calendar-nav-button" type="button" aria-label="Next month">›</button>
+              </div>
+              <button id="calendar-today" class="calendar-today-button" type="button">Today</button>
+            </div>
+            <div id="calendar-legend" class="calendar-legend" aria-label="Subject color legend"></div>
+            <div class="calendar-grid" role="grid" aria-labelledby="calendar-month-label">
+              <div class="calendar-weekdays" role="row">
+                <span role="columnheader">Sun</span><span role="columnheader">Mon</span>
+                <span role="columnheader">Tue</span><span role="columnheader">Wed</span>
+                <span role="columnheader">Thu</span><span role="columnheader">Fri</span>
+                <span role="columnheader">Sat</span>
+              </div>
+              <div id="calendar-days" class="calendar-days" role="rowgroup" aria-live="polite"></div>
+            </div>
+            <section id="unscheduled-section" class="unscheduled-section" aria-labelledby="unscheduled-title" hidden>
+              <h2 id="unscheduled-title">Tasks without a date</h2>
+              <div id="unscheduled-task-list" class="unscheduled-task-list"></div>
+            </section>
+          </div>
+          <aside class="calendar-sidebar">
+            <form id="task-form" class="task-form calendar-task-form">
+              <div class="calendar-form-heading">
+                <h2 id="task-form-heading">Add a task</h2>
+                <p>Choose what to work on and when it’s due.</p>
+              </div>
+              <div class="task-field">
+                <label for="task-title">Task</label>
+                <input id="task-title" name="title" type="text" maxlength="120" placeholder="e.g. Finish biology lab report" required>
+              </div>
+              <div class="task-field">
+                <label for="task-subject">Subject <span class="optional-label">Optional</span></label>
+                <input id="task-subject" name="subject" type="text" maxlength="80" placeholder="e.g. Biology">
+              </div>
+              <div class="task-field">
+                <label for="task-due-date">Due date <span class="optional-label">Optional</span></label>
+                <input id="task-due-date" name="dueDate" type="date">
+              </div>
+              <fieldset class="task-criteria">
+                <legend>Assessment criteria <span class="optional-label">Optional</span></legend>
+                <label><input type="checkbox" name="criteria" value="A"> A</label>
+                <label><input type="checkbox" name="criteria" value="B"> B</label>
+                <label><input type="checkbox" name="criteria" value="C"> C</label>
+                <label><input type="checkbox" name="criteria" value="D"> D</label>
+              </fieldset>
+              <label id="task-completed-label" class="task-completed-label" hidden>
+                <input id="task-completed" type="checkbox">
+                Mark this task complete
+              </label>
+              <div class="calendar-form-actions">
+                <button id="task-submit-button" class="primary-button" type="submit">Add task <span aria-hidden="true">+</span></button>
+                <button id="task-cancel-edit" class="calendar-secondary-button" type="button" hidden>Cancel</button>
+                <button id="task-delete-edit" class="calendar-delete-button" type="button" hidden>Delete task</button>
+              </div>
+              <p id="task-status" class="feature-notice" role="status" aria-live="polite"></p>
+            </form>
+            <div class="calendar-planning-note">
+              <h3>A gentle planning tip</h3>
+              <p>Break a big assignment into a few smaller steps—research, drafting, and review—so you can see your next action at a glance.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="grades-content" class="feature-content" hidden aria-labelledby="grades-title">
+        <div class="feature-heading">
+          <p class="eyebrow">NOTICE YOUR PROGRESS</p>
+          <h1 id="grades-title">Grades</h1>
+          <p>Set up each subject with its own grading scale, then add your assessment results to see your progress.</p>
+        </div>
+        <form id="grade-scale-form" class="grade-scale-card">
+          <fieldset>
+            <legend>What are your grades marked out of for this subject?</legend>
+            <p>Add a subject and choose its grading scale. You can add more subjects afterwards.</p>
+            <div class="task-field">
+              <label for="grade-setup-subject">Subject</label>
+              <input id="grade-setup-subject" type="text" list="grade-subject-options" maxlength="60" placeholder="e.g. Mathematics" required>
+            </div>
+            <datalist id="grade-subject-options">
+              <option value="Mathematics"></option><option value="English"></option>
+              <option value="Science"></option><option value="Biology"></option>
+              <option value="Chemistry"></option><option value="Physics"></option>
+              <option value="History"></option><option value="Geography"></option>
+              <option value="Art"></option><option value="Design"></option>
+            </datalist>
+            <div class="grade-scale-options">
+              <label><input type="radio" name="scale" value="8" required> Out of 8</label>
+              <label><input type="radio" name="scale" value="100"> Out of 100</label>
+              <label><input type="radio" name="scale" value="custom"> Other</label>
+            </div>
+            <div id="grade-custom-scale-field" class="task-field" hidden>
+              <label for="grade-custom-scale">Your maximum score</label>
+              <input id="grade-custom-scale" type="number" min="1" max="10000" step="1" placeholder="e.g. 20">
+            </div>
+          </fieldset>
+          <p id="grade-scale-status" class="feature-notice" role="status"></p>
+          <button class="primary-button" type="submit">Save subject</button>
+          <button id="grade-cancel-scale" class="grade-secondary-button" type="button" hidden>Cancel</button>
+        </form>
+        <div id="grade-tracker" hidden>
+        <div class="grade-subject-toolbar">
+          <div class="task-field"><label for="grade-subject-select">Choose a subject</label><select id="grade-subject-select"></select></div>
+          <span id="grade-scale-label"></span>
+          <button id="grade-change-scale" class="grade-secondary-button" type="button">Change scale</button>
+          <button id="grade-add-subject" class="grade-secondary-button" type="button">+ Add subject</button>
+          <button id="grade-add-result" class="grade-secondary-button" type="button" aria-expanded="false" aria-controls="grade-entry">+ Add result</button>
+        </div>
+        <section class="grade-schedule" aria-labelledby="grade-schedule-title">
+          <div class="section-title-row">
+            <h2 id="grade-schedule-title">Upcoming tasks &amp; assessments</h2>
+            <div class="grade-schedule-actions">
+              <button id="grade-add-task" class="grade-secondary-button" type="button" aria-expanded="false" aria-controls="grade-task-entry">+ Add assessment</button>
+              <a class="subtle-link" href="/calendar">Open calendar →</a>
+            </div>
+          </div>
+          <form id="grade-task-entry" class="task-form grade-task-entry" hidden>
+            <div class="task-field">
+              <label for="grade-task-title">Assessment</label>
+              <input id="grade-task-title" name="title" type="text" maxlength="120" placeholder="e.g. Science investigation" required>
+            </div>
+            <div class="task-field">
+              <label for="grade-task-due">Due date</label>
+              <input id="grade-task-due" name="dueDate" type="date" required>
+            </div>
+            <fieldset class="task-criteria">
+              <legend>Criteria <span class="optional-label">Optional</span></legend>
+              <label><input type="checkbox" name="criteria" value="A"> A</label>
+              <label><input type="checkbox" name="criteria" value="B"> B</label>
+              <label><input type="checkbox" name="criteria" value="C"> C</label>
+              <label><input type="checkbox" name="criteria" value="D"> D</label>
+            </fieldset>
+            <button class="primary-button" type="submit">Add to calendar</button>
+          </form>
+          <p id="grade-task-status" class="feature-notice" role="status" aria-live="polite"></p>
+          <div id="grade-scheduled-tasks"></div>
+        </section>
+        <div id="grade-entry" hidden>
+        <form id="grade-form" class="task-form grade-form">
+          <div class="task-field">
+            <label for="grade-task">Link to a calendar task (optional)</label>
+            <select id="grade-task" name="taskId"><option value="">No linked task</option></select>
+          </div>
+          <div class="task-field">
+            <label for="grade-assessment">Assessment</label>
+            <input id="grade-assessment" name="assessment" type="text" maxlength="120" placeholder="e.g. Algebra quiz" required>
+          </div>
+          <div class="task-field" id="grade-result-date-field">
+            <label for="grade-result-date">Calendar date <span class="optional-label">Optional</span></label>
+            <input id="grade-result-date" name="dueDate" type="date">
+          </div>
+          <div class="task-field">
+            <label for="grade-criterion">Criterion</label>
+            <select id="grade-criterion" name="criterion" required>
+              <option value="">Choose criterion</option>
+              <option value="A">A</option><option value="B">B</option>
+              <option value="C">C</option><option value="D">D</option>
+            </select>
+          </div>
+          <div class="task-field">
+            <label for="grade-score">Score</label>
+            <input id="grade-score" name="score" type="number" min="0" max="100" step="1" placeholder="e.g. 7" required>
+          </div>
+          <div class="task-field">
+            <label for="grade-max-score">Out of</label>
+            <input id="grade-max-score" name="maxScore" type="number" min="1" max="10000" step="1" value="100" required>
+          </div>
+          <button class="primary-button" type="submit">Add result <span aria-hidden="true">+</span></button>
+        </form>
+        <p id="grade-score-preview" class="grade-score-preview" aria-live="polite">Enter a score to see its percentage.</p>
+        <p class="grade-chart-note">New results are added to Calendar. Without a date they appear under unscheduled tasks. Linked tasks keep their existing date.</p>
+        <p class="grade-chart-note">Add a separate result for each criterion you have been graded on.</p>
+        </div>
+        <p id="grade-status" class="feature-notice" role="status" aria-live="polite"></p>
+        <div id="grade-chart" class="grade-chart" aria-live="polite"></div>
+        <p class="feature-caveat">Scores are for your own tracking. Use your teacher’s rubric and feedback to understand what they mean; this is not an official school record.</p>
+        </div>
+      </section>
+
+      <section id="how-to-use-content" class="feature-content" hidden aria-labelledby="how-to-use-title">
+        <div class="feature-heading">
+          <p class="eyebrow">YOUR STUDY SPACE, STEP BY STEP</p>
+          <h1 id="how-to-use-title">How To Use AcademicBuddy</h1>
+          <p>Start with a question, explore the evidence, and keep track of what you learn. Each tool is here to support your work—not do your assignment for you.</p>
+        </div>
+        <p class="feature-supporting-copy">You do not need to use every tool at once. Begin with the part of your schoolwork that feels unclear, then choose the next small action that will help you move forward.</p>
+        <div class="guidance-grid how-to-grid">
+          <article class="guidance-card"><span class="guidance-icon">01</span><h2>Search with a question</h2><p>Try a focused topic or key terms. Use research records to discover titles, authors, and publishers you can investigate. If results are too broad, add a specific place, period, or subject phrase.</p><a class="feature-link" href="/search">Search sources <span aria-hidden="true">→</span></a></article>
+          <article class="guidance-card"><span class="guidance-icon">02</span><h2>Check the source</h2><p>Read the original work. Check who wrote it, what evidence it uses, when it was published, and whether it fits your question. Compare its claims with other credible work before you rely on it.</p><a class="feature-link" href="/sources">Learn about sources <span aria-hidden="true">→</span></a></article>
+          <article class="guidance-card"><span class="guidance-icon">03</span><h2>Ask Chat Buddy</h2><p>Ask for a simple explanation, a hint, or a study plan. Use the response to guide your own thinking, and verify important facts with trusted sources or your teacher.</p><a class="feature-link" href="/chat-buddy">Open Chat Buddy <span aria-hidden="true">→</span></a></article>
+          <article class="guidance-card"><span class="guidance-icon">04</span><h2>Stay organised</h2><p>Add a task and due date to your calendar. Record assessment results and think about what you want to practise next. Small, specific steps are easier to return to than one large reminder.</p><a class="feature-link" href="/calendar">Open your calendar <span aria-hidden="true">→</span></a></article>
+        </div>
+        <p class="feature-caveat">Chat Buddy can make mistakes. Check important information with reliable sources and follow your teacher’s assignment rules.</p>
+      </section>
+
+      <div id="app-status" class="dashboard-alert" role="alert" hidden></div>
+    </main>
+  </body>
+</html>

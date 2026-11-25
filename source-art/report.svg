@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" fill="none">
+  <title>Illustration of a research report</title>
+  <defs>
+    <linearGradient id="bg" x1="15" y1="8" x2="300" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E6F1FB"/>
+      <stop offset="1" stop-color="#F5EBDD"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="105" y1="27" x2="220" y2="182" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="210" rx="18" fill="url(#bg)"/>
+  <circle cx="57" cy="157" r="32" fill="#C5D8F2" fill-opacity=".62"/>
+  <circle cx="269" cy="51" r="24" fill="#F0CF9C" fill-opacity=".6"/>
+  <rect x="96" y="27" width="136" height="160" rx="10" fill="#7892AB" fill-opacity=".17" transform="rotate(-4 96 27)"/>
+  <rect x="93" y="25" width="136" height="160" rx="10" fill="url(#paper)"/>
+  <rect x="109" y="43" width="38" height="7" rx="3.5" fill="#7B9FC2"/>
+  <rect x="109" y="60" width="95" height="8" rx="4" fill="#344C65"/>
+  <rect x="109" y="74" width="72" height="4" rx="2" fill="#A8B5C2"/>
+  <path d="M114 151V112h18v39m9 0V98h18v53m9 0v-28h18v28" fill="#9CCAB0"/>
+  <path d="M110 151h82" stroke="#91A5B6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M117 105l27-14 17 9 28-23" stroke="#658FB5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="117" cy="105" r="4" fill="#658FB5"/>
+  <circle cx="144" cy="91" r="4" fill="#658FB5"/>
+  <circle cx="161" cy="100" r="4" fill="#658FB5"/>
+  <circle cx="189" cy="77" r="4" fill="#658FB5"/>
+  <rect x="208" y="142" width="41" height="29" rx="8" fill="#fff" fill-opacity=".9"/>
+  <path d="M219 161v-7m9 7v-12m9 12v-5" stroke="#638FAF" stroke-width="4" stroke-linecap="round"/>
+</svg>

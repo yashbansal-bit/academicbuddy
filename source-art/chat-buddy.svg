@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" fill="none">
+  <title>Chat Buddy, a friendly study companion</title>
+  <defs>
+    <linearGradient id="background" x1="13" y1="8" x2="83" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9F5EC"/>
+      <stop offset="1" stop-color="#E5F1FA"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="24" y1="68" x2="74" y2="99" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#70A985"/>
+      <stop offset="1" stop-color="#5F8DA6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="48" cy="48" r="48" fill="url(#background)"/>
+  <path d="M17 96c2-13 13-22 31-22s29 9 31 22" fill="url(#shirt)"/>
+  <path d="M27 42c0-17 8-27 21-27 15 0 23 10 23 27v10H27V42Z" fill="#355B50"/>
+  <path d="M28 42c0-14 8-21 20-21 13 0 20 8 20 21v13c0 12-9 21-20 21s-20-9-20-21V42Z" fill="#F2D5B8"/>
+  <path d="M28 43c2-14 10-20 20-20 9 0 17 5 21 15-7-1-12-5-15-9-6 7-14 11-26 14Z" fill="#355B50"/>
+  <path d="M36 50h.5M59.5 50h.5" stroke="#30485A" stroke-width="4" stroke-linecap="round"/>
+  <path d="M41 62c2 3 4 4 7 4s6-1 8-4" stroke="#A96659" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M31 57c2 2 4 3 7 3M58 60c3 0 5-1 7-3" stroke="#E3A79A" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  <path d="M24 45c-3 0-5 3-5 7s2 7 5 7M72 45c3 0 5 3 5 7s-2 7-5 7" stroke="#6C9F87" stroke-width="4" stroke-linecap="round"/>
+  <path d="m69 34 8-4" stroke="#7C9EB6" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="79" cy="28" r="3" fill="#E5BB67"/>
+</svg>

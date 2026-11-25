@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 88" fill="none">
+  <title>Blue graduation cap</title>
+  <path d="M7 34 63 8l58 27-57 28L7 34Z" fill="#6F8FC3"/>
+  <path d="m25 45 38 18 39-19v19c-20 15-57 16-77 0V45Z" fill="#5374AA"/>
+  <path d="M119 35v30" stroke="#416296" stroke-width="4" stroke-linecap="round"/>
+  <path d="M119 65c-8 1-10 9-5 13 5 4 11 0 11-5" stroke="#416296" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="119" cy="35" r="5" fill="#83A0D0"/>
+</svg>

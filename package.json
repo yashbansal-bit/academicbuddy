@@ -1,0 +1,20 @@
+{
+  "name": "academicbuddy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "nodemailer": "^10.5.0"
+  },
+  "devDependencies": {
+    "smtp-server": "^3.15.0"
+  }
+}

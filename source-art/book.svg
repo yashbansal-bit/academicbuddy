@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 210" fill="none">
+  <title>Illustration of a book chapter</title>
+  <defs>
+    <linearGradient id="bg" x1="12" y1="0" x2="306" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9E8FA"/>
+      <stop offset="1" stop-color="#DDF1E8"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="105" y1="47" x2="217" y2="172" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA488"/>
+      <stop offset="1" stop-color="#376E58"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="210" rx="18" fill="url(#bg)"/>
+  <circle cx="55" cy="47" r="23" fill="#fff" fill-opacity=".62"/>
+  <circle cx="272" cy="164" r="33" fill="#B8C8E8" fill-opacity=".55"/>
+  <rect x="73" y="115" width="174" height="47" rx="7" fill="#E2BC80" transform="rotate(-5 73 115)"/>
+  <path d="M82 124l160-14v9L83 133v-9Z" fill="#F4D59E"/>
+  <rect x="82" y="69" width="170" height="57" rx="7" fill="#7782B0" transform="rotate(4 82 69)"/>
+  <path d="M89 80l164 12-1 9L88 89l1-9Z" fill="#A2A9CF"/>
+  <rect x="96" y="43" width="140" height="113" rx="10" fill="url(#cover)" transform="rotate(-3 96 43)"/>
+  <path d="M113 47v109" stroke="#C1E2CC" stroke-opacity=".8" stroke-width="5"/>
+  <rect x="132" y="70" width="77" height="5" rx="2.5" fill="#D8EEE0" fill-opacity=".75"/>
+  <rect x="132" y="85" width="62" height="8" rx="4" fill="#fff"/>
+  <rect x="132" y="100" width="72" height="4" rx="2" fill="#D8EEE0" fill-opacity=".75"/>
+  <rect x="132" y="110" width="55" height="4" rx="2" fill="#D8EEE0" fill-opacity=".75"/>
+  <path d="M208 52c11 9 14 22 9 33" stroke="#F3D28C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M223 51l-2 12-10-7" stroke="#F3D28C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
